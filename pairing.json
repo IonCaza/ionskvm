@@ -3,13 +3,13 @@
   "pairingType": "PROMPT",
   "manifest": {
     "manifestVersion": 1,
-    "appVersion": "1.1",
+    "appVersion": "1.5",
     "signed": {
       "created": "20140509",
       "appId": "com.lge.test",
       "vendorId": "com.lge",
       "localizedAppNames": {
-        "": "LG Remote App",
+        "": "LG Remote Apple",
         "ko-KR": "리모컨 앱",
         "zxx-XX": "ЛГ Rэмotэ AПП"
       },

@@ -1,3 +1,11 @@
+# Ion's KVM
+
+Inspired from https://github.com/hobbyquaker/lgtv2
+
+Use case is the following: Given two computers as a source for an LGTV used as a monitor, when USB devices are introduced in either computer's I/O registry, the screen will switch TV input to the computer with the new I/O components. Using a https://www.monoprice.com/product?p_id=38298 Monoprice USB switch, I have Mouse/Keyboards hooked up to it, and with the click of a button it switches my KM between devices. Video is more problematic since a 4K 120hz KVM is >$500, we tap into LG TV's smart WebOs websocket to change device based on I/O hooks. This implementation is for both Mac and Windows since I'm switching between the two.
+
+-------
+
 # LGTV2
 
 [![NPM version](https://badge.fury.io/js/lgtv2.svg)](http://badge.fury.io/js/lgtv2)

@@ -53,6 +53,7 @@ var LGTV = function (config) {
     } else {
         that.clientKey = config.clientKey;
     }
+    console.log(this.clientKey);
 
     that.saveKey = config.saveKey || function (key, cb) {
         that.clientKey = key;

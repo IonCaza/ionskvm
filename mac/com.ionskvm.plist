@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>UserName</key>
+    <string>ion.caza</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/ionskvm.stderr</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/ionskvm.stdout</string>
+    <key>Label</key>
+    <string>com.ionskvm.program</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>~/git/ionskvm/mac/xpc_set_event_stream_handler</string>
+        <string>~/git/ionskvm/mac/mac.sh</string>
+    </array>
+    <key>LaunchEvents</key>
+    <dict>
+        <key>com.apple.iokit.matching</key>
+        <dict>
+            <key>com.apple.device-attach</key>
+            <dict>
+                <key>idVendor</key>
+                <integer>2131</integer>
+                <key>idProduct</key>
+                <integer>273</integer>
+                <key>idProduct</key>
+                <integer>279</integer>
+                <key>IOProviderClass</key>
+                <string>IOUSBDevice</string>
+                <key>IOMatchLaunchStream</key>
+                <true/>
+                <key>IOMatchStream</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
