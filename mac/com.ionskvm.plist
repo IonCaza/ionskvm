@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>UserName</key>
-    <string>ion.caza</string>
+    <string>root</string>
     <key>StandardErrorPath</key>
     <string>/tmp/ionskvm.stderr</string>
     <key>StandardOutPath</key>
@@ -12,8 +12,8 @@
     <string>com.ionskvm.program</string>
     <key>ProgramArguments</key>
     <array>
-        <string>~/git/ionskvm/mac/xpc_set_event_stream_handler</string>
-        <string>~/git/ionskvm/mac/mac.sh</string>
+        <string>/Users/ion.caza/git/ionskvm/mac/xpc_set_event_stream_handler</string>
+        <string>/Users/ion.caza/git/ionskvm/mac/mac.sh</string>
     </array>
     <key>LaunchEvents</key>
     <dict>
@@ -25,8 +25,6 @@
                 <integer>2131</integer>
                 <key>idProduct</key>
                 <integer>273</integer>
-                <key>idProduct</key>
-                <integer>279</integer>
                 <key>IOProviderClass</key>
                 <string>IOUSBDevice</string>
                 <key>IOMatchLaunchStream</key>
