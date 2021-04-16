@@ -13,7 +13,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/xpc_set_event_stream_handler</string>
-        <string>/usr/local/bin/ionskvm-macmac.sh</string>
+        <string>/usr/local/bin/ionskvm-mac.sh</string>
     </array>
     <key>LaunchEvents</key>
     <dict>
