@@ -13,8 +13,13 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/xpc_set_event_stream_handler</string>
-        <string>PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin && /usr/local/bin/ionskvm-mac.sh</string>
+        <string>/usr/local/bin/ionskvm-mac.sh</string>
     </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
     <key>LaunchEvents</key>
     <dict>
         <key>com.apple.iokit.matching</key>
