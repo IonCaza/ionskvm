@@ -10,8 +10,6 @@ var fs = require('fs');
 var EventEmitter = require('events').EventEmitter;
 var util = require('util');
 var WebSocketClient = require('websocket').client;
-var ppath = require('persist-path');
-var mkdirp = require('mkdirp');
 
 var SpecializedSocket = function (ws) {
     this.send = function (type, payload) {
@@ -45,8 +43,7 @@ var LGTV = function (config) {
     config.reconnect = typeof config.reconnect === 'undefined' ? 5000 : config.reconnect;
     config.wsconfig = config.wsconfig || {keepalive: true, keepaliveInterval: 10000, dropConnectionOnKeepaliveTimeout: true, keepaliveGracePeriod: 5000};
     if (typeof config.clientKey === 'undefined') {
-        mkdirp(ppath('lgtv2'));
-        config.keyFile = (config.keyFile ? config.keyFile : ppath('lgtv2/keyfile-') + config.url.replace(/[a-z]+:\/\/([0-9a-zA-Z-_.]+):\d+/, '$1'));
+        config.keyFile = (config.keyFile ? config.keyFile : '/tmp/lgtvkeyfile-' + config.url.replace(/[a-z]+:\/\/([0-9a-zA-Z-_.]+):\d+/, '$1'));
         try {
             that.clientKey = fs.readFileSync(config.keyFile).toString();
         } catch (err) {}
