@@ -12,8 +12,8 @@
     <string>com.ionskvm.program</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/ion.caza/git/ionskvm/mac/xpc_set_event_stream_handler</string>
-        <string>/Users/ion.caza/git/ionskvm/mac/mac.sh</string>
+        <string>/usr/local/bin/xpc_set_event_stream_handler</string>
+        <string>/usr/local/bin/ionskvm-macmac.sh</string>
     </array>
     <key>LaunchEvents</key>
     <dict>
@@ -28,8 +28,6 @@
                 <key>IOProviderClass</key>
                 <string>IOUSBDevice</string>
                 <key>IOMatchLaunchStream</key>
-                <true/>
-                <key>IOMatchStream</key>
                 <true/>
             </dict>
         </dict>
