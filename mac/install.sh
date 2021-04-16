@@ -8,7 +8,7 @@ rm -rf /usr/local/bin/lgtvcontrol
 mkdir /usr/local/bin/lgtvcontrol
 git clone https://github.com/IonCaza/ionskvm /usr/local/bin/lgtvcontrol
 oldpath=`pwd`
-cd /usr/local/bin
+cd /usr/local/bin/lgtvcontrol
 npm install
 
 # xpc build
