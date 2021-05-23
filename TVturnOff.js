@@ -1,4 +1,8 @@
 var config = require('./config.js')
+var shell = require('shelljs');
+
+var numberOfRealforceDevices = shell.exec('ioreg -p IOUSB | grep Realforce -c').replace(/\n/g,'')
+console.log(numberOfRealforceDevices)
 
 var myArgs = process.argv.slice(2);
 var os = myArgs[0];
